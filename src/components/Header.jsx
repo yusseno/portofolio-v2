@@ -63,19 +63,19 @@ const Header = () => {
       </div>
       <ul className={`${isMenuOpen ? 'text-center pt-4 backdrop-blur-md h-screen inset-y-0' : 'hidden' } lg:flex lg:items-center pt-10 lg:pt-0 lg:ml-auto`}>
         <li className={styleNav}>
-          <Link to="/about">About</Link>
+          <a href="#about">About</a>
         </li>
         <li className={styleNav}>
-          <Link to="/experience">Experience</Link>
+          <a href="#">Experience</a>
         </li>
         <li className={styleNav}>
-          <Link to="/work">Work</Link>
+          <a href="#">Work</a>
         </li>
         <li className={styleNav}>
-          <Link to="/project">Project</Link>
+          <a href="#">Project</a>
         </li>
         <li className={`${styleNav} m-auto w-fit px-4 lg:my-0 lg:mr-10 border-[1px] rounded-md border-[#64FFDA] text-[#64FFDA]`}>
-          <Link to="/resume">Resume</Link>
+          <a href="#">Resume</a>
         </li>
       </ul>
     </nav>
