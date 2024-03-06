@@ -50,7 +50,7 @@ const About = () => {
                         </svg>
                         <p className="text-slate-400 ml-2 mt-2">Backend</p>
                     </div>
-                    <div className="grid grid-cols-3 lg:grid-cols-5 gap-1">
+                    <div className="grid grid-cols-2 lg:grid-cols-5 gap-1">
                         <div className="flex flex-col items-center justify-center">
                             <img src={Golang} alt='kosong' className="h-6 mt-2"></img>
                             <p className="text-slate-400 mt-2">Golang</p>
@@ -75,14 +75,14 @@ const About = () => {
                         </svg>
                         <p className="text-slate-400 ml-2 mt-2">Frontend</p>
                     </div>
-                    <div className="grid grid-cols-3 lg:grid-cols-5 gap-1">
+                    <div className="grid grid-cols-2 lg:grid-cols-5 gap-1">
                         <div className="flex flex-col items-center justify-center">
                             <img src={Reacts} alt='kosong' className="h-6 mt-2"></img>
                             <p className="text-slate-400 mt-2">React</p>
                         </div>
                         <div className="flex flex-col items-center justify-center">
                             <img src={Tailwind} alt='kosong' className="h-5 mt-2"></img>
-                            <p className="text-slate-400 text-[15px] lg:text-sm mt-2 lg:mt-3">Tailwind CSS</p>
+                            <p className="text-slate-400 text-[14px] lg:text-sm mt-2 lg:mt-4">Tailwind CSS</p>
                          </div>
                     </div>
                     <br />
@@ -92,7 +92,7 @@ const About = () => {
                         </svg>
                         <p className="text-slate-400 ml-2 mt-2">Development dan Operations</p>
                     </div>
-                    <div className="grid grid-cols-3 lg:grid-cols-5 gap-1">
+                    <div className="grid grid-cols-2 lg:grid-cols-5 gap-1">
                         <div className="flex flex-col items-center justify-center">
                             <img src={Ubuntu} alt='kosong' className="h-6 mt-2"></img>
                             <p className="text-slate-400 mt-2">Ubuntu</p>
@@ -113,7 +113,7 @@ const About = () => {
                         </svg>
                         <p className="text-slate-400 ml-2 mt-2">Database</p>
                     </div>
-                    <div className="grid grid-cols-3 lg:grid-cols-5 gap-1">
+                    <div className="grid grid-cols-2 lg:grid-cols-5 gap-1">
                         <div className="flex flex-col items-center justify-center">
                             <img src={MySql} alt='kosong' className="h-6 mt-2"></img>
                             <p className="text-slate-400 mt-2">MySql</p>
