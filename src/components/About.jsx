@@ -41,7 +41,7 @@ const About = () => {
                 </figure>
                 <article className="mt-[310px] lg:mt-0 lg:mr-4">
                     <p className="text-slate-400 text-xs lg:text-sm text-justify text-[16px]"> &nbsp; Hallo! Nama saya Yusseno dan saya senang membuat hal-hal yang hidup di internet. Ketertarikan saya pada pengembangan web dimulai Sekolah Menengah ketika saya mendapatkan tawaran untuk mencoba mengedit template untuk mengerjakan tugas teman saya, berupa tentang HTML & CSS!. <br />
-                        &nbsp; Kemudian kareba merasakan tertarik di bidang tersebut saya memutuskan masuk ke sekolah kejuruan dan memutuskan melanjutkan studi ke Universitas untuk menpelajari lebih lanjut minat saya.<br />
+                        &nbsp; Kemudian karena merasakan tertarik di bidang tersebut saya memutuskan masuk ke sekolah kejuruan dan memutuskan melanjutkan studi ke Universitas untuk menpelajari lebih lanjut minat saya.<br />
                         &nbsp; Berikut adalah beberapa teknologi yang telah saya gunakan baru-baru ini diantaranya :
                     </p>
                     <div className="flex">
