@@ -3,14 +3,18 @@ import Header from "./Header";
 import Home from "./Home";
 import About from "./About";
 import Experience from "./Experience";
+import Work from "./Work";
+import Project from "./Project"
 
 const Layout = () => {
     return (
         <div className="overflow-hidden">
-            {/* <Header />
+            <Header />
             <Home />
-            <About /> */}
+            <About />
             <Experience />
+            <Work />
+            <Project />
         </div>
     )
 };

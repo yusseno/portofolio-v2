@@ -29,25 +29,25 @@ const Experience = () => {
                         <LiaSchoolSolid className='text-[26px] ml-1 mt-[6px]'></LiaSchoolSolid>
                         <p className="ml-2 mt-2 text-sm">Non Formal Education</p>
                     </div>
-                    <div className="flex" data-aos="fade-right">
-                        <TbPoint className='ml-8 size-14 lg:size-8'></TbPoint>
-                        <p className="text-slate-400 ml-2 mt-2 mb-6 text-justify text-xs lg:text-sm">Kampus Merdeka white Ruang Guru Software Engineering Backend Golang <i>(Agustus - Desember 2022)</i></p>
+                    <div className="flex" data-aos="fade-left">
+                        <span className="w-fit"><TbPoint className='ml-8 mt-2 lg:mt-0 lg:size-8'></TbPoint></span>
+                        <p className="text-slate-400 ml-2 mt-2 text-justify pb-2 text-xs">Kampus Merdeka white Ruang Guru Software Engineering Backend Golang <i>(Agustus - Desember 2022)</i></p>
                     </div>
                     <div className="flex" data-aos="fade-right">
                         <VscOrganization className='text-[26px] ml-1 mt-[6px]'></VscOrganization>
                         <p className="ml-2 mt-2 text-sm">Organization</p>
                     </div>
-                    <div className="flex" data-aos="fade-right">
-                        <TbPoint className='ml-8 size-[40px] lg:size-8'></TbPoint>
-                        <p className="text-slate-400 ml-2 mt-2 text-justify text-xs lg:text-sm">Unit Kegiatan Mahasiswa Informatika dan Komputer <i>(2020 - 2024)</i></p>
+                    <div className="flex" data-aos="fade-left">
+                        <span className="w-fit"><TbPoint className='ml-8 mt-2 lg:mt-0 lg:size-8'></TbPoint></span>
+                        <p className="text-slate-400 ml-2 mt-2 text-justify pb-2 text-xs">Unit Kegiatan Mahasiswa Informatika dan Komputer <i>(2020 - 2024)</i></p>
                     </div>
-                    <div className="flex" data-aos="fade-right">
-                        <TbPoint className='ml-8 size-[40px] lg:size-8'></TbPoint>
-                        <p className="text-slate-400 ml-2 mt-2 text-justify text-xs lg:text-sm">Himpunan Mahasiswa Jurusan Informatika <i>(2020 - 2023)</i></p>
+                    <div className="flex" data-aos="fade-left">
+                        <span className="w-fit"><TbPoint className='ml-8 mt-2 lg:mt-0 lg:size-8'></TbPoint></span>
+                        <p className="text-slate-400 ml-2 mt-2 text-justify pb-2 text-xs">Himpunan Mahasiswa Jurusan Informatika <i>(2020 - 2023)</i></p>
                     </div>
-                    <div className="flex" data-aos="fade-right">
-                    <TbPoint className='ml-8 size-[40px] lg:size-8'></TbPoint>
-                        <p className="text-slate-400 ml-2 mt-2 text-justify text-xs lg:text-sm">Badan Eksekutif Mahasiswa Kementrian SDM dan Luar negeri <i>(2020 - 2021)</i></p>
+                    <div className="flex" data-aos="fade-left">
+                        <span className="w-fit"><TbPoint className='ml-8 mt-2 lg:mt-0 lg:size-8'></TbPoint></span>
+                        <p className="text-slate-400 ml-2 mt-2 text-justify pb-2 text-xs">Badan Eksekutif Mahasiswa Kementrian SDM dan Luar negeri <i>(2020 - 2021)</i></p>
                     </div>
                 </article>
             </div>

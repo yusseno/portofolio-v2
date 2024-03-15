@@ -66,10 +66,10 @@ const Header = () => {
           <a href="#about">About</a>
         </li>
         <li className={styleNav}>
-          <a href="#">Experience</a>
+          <a href="#experience">Experience</a>
         </li>
         <li className={styleNav}>
-          <a href="#">Work</a>
+          <a href="#work">Work</a>
         </li>
         <li className={styleNav}>
           <a href="#">Project</a>
