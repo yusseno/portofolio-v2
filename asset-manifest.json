@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/portofolio-v2/static/css/main.142b7063.css",
-    "main.js": "/portofolio-v2/static/js/main.ab736f64.js",
+    "main.css": "/portofolio-v2/static/css/main.e644808e.css",
+    "main.js": "/portofolio-v2/static/js/main.7fc0f5f9.js",
     "static/js/453.9024220f.chunk.js": "/portofolio-v2/static/js/453.9024220f.chunk.js",
     "static/media/yusseno-full-transformed.png": "/portofolio-v2/static/media/yusseno-full-transformed.c88aead6d3255a533bac.png",
+    "static/media/ukm-ik.png": "/portofolio-v2/static/media/ukm-ik.0540789cc4201e3bb1fd.png",
     "static/media/laravel-icon.png": "/portofolio-v2/static/media/laravel-icon.be3f622df04a403a80e5.png",
+    "static/media/kanban_app.png": "/portofolio-v2/static/media/kanban_app.3c682673a379eb781d82.png",
     "static/media/mysql-icon.png": "/portofolio-v2/static/media/mysql-icon.4ee36997e9272dccb68b.png",
     "static/media/Ubuntu_and_Ubuntu_Server_Icon.png": "/portofolio-v2/static/media/Ubuntu_and_Ubuntu_Server_Icon.6f8c4b12768862dc5c07.png",
     "static/media/gitlab-icon.png": "/portofolio-v2/static/media/gitlab-icon.817190c50288f4918d6d.png",
@@ -12,18 +14,19 @@
     "static/media/Y-logo.png": "/portofolio-v2/static/media/Y-logo.be7abf5dd2076c4e0bf8.png",
     "static/media/docker-icon.png": "/portofolio-v2/static/media/docker-icon.b6a94d2c9c38cfd2e1fa.png",
     "static/media/redis-icon.png": "/portofolio-v2/static/media/redis-icon.375f0c5b18ea157fdda7.png",
+    "static/media/bluebird.png": "/portofolio-v2/static/media/bluebird.ae90df1e2078f8f2eba8.png",
     "static/media/react-removebg.png": "/portofolio-v2/static/media/react-removebg.882f4a5a5bc7300909a0.png",
     "static/media/golang-removebg.png": "/portofolio-v2/static/media/golang-removebg.df74414382a6f33ab606.png",
     "static/media/nestjs-icon.png": "/portofolio-v2/static/media/nestjs-icon.9cfa484aa7810965da94.png",
     "static/media/mongodb-icon.png": "/portofolio-v2/static/media/mongodb-icon.7a16fc61d457c9e340e2.png",
     "static/media/next-js.png": "/portofolio-v2/static/media/next-js.9f8054a6dc0837262000.png",
     "index.html": "/portofolio-v2/index.html",
-    "main.142b7063.css.map": "/portofolio-v2/static/css/main.142b7063.css.map",
-    "main.ab736f64.js.map": "/portofolio-v2/static/js/main.ab736f64.js.map",
+    "main.e644808e.css.map": "/portofolio-v2/static/css/main.e644808e.css.map",
+    "main.7fc0f5f9.js.map": "/portofolio-v2/static/js/main.7fc0f5f9.js.map",
     "453.9024220f.chunk.js.map": "/portofolio-v2/static/js/453.9024220f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.142b7063.css",
-    "static/js/main.ab736f64.js"
+    "static/css/main.e644808e.css",
+    "static/js/main.7fc0f5f9.js"
   ]
 }
