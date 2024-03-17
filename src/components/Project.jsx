@@ -25,38 +25,51 @@ const Projects = () => {
                 </div>
             </div> 
             <div className="lg:grid lg:grid-cols-3 pt-8 justify-center mb-6">
-                <div className="relative group justify-center items-center">
-                    <div className="flex justify-center items-center">
-                        <img src={Kanban} className="px-4 lg:h-48 lg:w-100 rounded-md" data-aos="fade-right"></img>
-                    </div>
-                    <div className="text-left p-4" data-aos="fade-left">
-                        <span className="flex text-[#64FFDA] text-[16px]">future Project</span>
-                        <span className="flex font-semibold text-[22px]  pb-4">Website Kanban APP</span>
-                        <span className="flex text-[16px] text-justify italic text-xs">Project ini dibangun ketika mengerjakan final project MKBM Studi Independen di Ruang Guru, dengan program Sofware Enginnering dengan pilihan kelas Backend</span>
-                        <span className="flex text-[16px] text-justify italic text-xs">Teknologi : Golang dan TailwindCSS</span>
-                    </div>
+                <div class="p-4 m-8 w-80 shadow-md rounded-xl border">
+                    <picture class="rounded-lg block overflow-hidden">
+                        <img
+                        class="hover:scale-125 ease-in duration-150 border"
+                        src={Kanban}
+                        />
+                    </picture>
+
+                    <h1 class="mt-4 mb-2 text-xl font-bold text-[#64FFDA]">Website Kanban APP</h1>
+                    <p class="text-xs">
+                        Project ini dibangun ketika mengerjakan final project MKBM Studi Independen di Ruang Guru, dengan program Sofware Enginnering dengan pilihan kelas Backend
+                    </p>
+                    <p class="text-xs italic pt-2">
+                        Teknologi : Golang dan TailwindCSS
+                    </p>
                 </div>
-                <div className="relative group justify-center items-center">
-                    <div className="flex justify-center items-center">
-                        <img src={Bluebird} className="h-32 w-96 lg:h-48 lg:w-56" data-aos="fade-right"></img>
-                    </div>
-                    <div className="text-left p-4" data-aos="fade-left">
-                        <span className="flex text-[#64FFDA] text-[16px]">future Project</span>
-                        <span className="flex font-semibold text-[22px] pb-4">Apliksi Squad Management System</span>
-                        <span className="flex text-[16px] text-justify italic text-xs">Project ini dibangun ketika Magang di PT. Bluebird Tbk. dimana aplikasi ini di bangun untu keperluan management karyawan dan absensi karyawn menggunakan QR code.</span>
-                        <span className="flex text-[16px] text-justify italic text-xs">Teknologi : React JS, Golang, Kotlin dan TailwindCSS</span>
-                    </div>
+                <div class="p-4 m-8 w-80 shadow-md rounded-xl border">
+                    <picture class="rounded-lg block overflow-hidden">
+                        <img
+                        class="hover:scale-125 ease-in duration-150 border"
+                        src={Bluebird}
+                        />
+                    </picture>
+
+                    <h1 class="mt-4 mb-2 text-xl font-bold text-[#64FFDA]">pliksi Squad Management System</h1>
+                    <p class="text-xs">
+                        Project ini dibangun ketika Magang di PT. Bluebird Tbk. dimana aplikasi ini di bangun untu keperluan management karyawan dan absensi karyawn menggunakan QR code.                </p>
+                    <p class="text-xs italic pt-2">
+                        Teknologi : React JS, Golang, Kotlin dan TailwindCSS
+                    </p>
                 </div>
-                <div className="relative group justify-center items-center">
-                    <div className="flex justify-center items-center">
-                        <img src={UKMIK} className="px-4 lg:h-48 lg:w-100 rounded-md" data-aos="fade-right"></img>
-                    </div>
-                    <div className="text-left p-4" data-aos="fade-left">
-                        <span className="flex text-[#64FFDA] text-[16px]">future Project</span>
-                        <span className="flex font-semibold text-[22px] pb-4">Webiste Unit Kegiatan Mahasiswa Informatika dan Komputer</span>
-                        <span className="flex text-[16px] text-justify italic text-xs">Project ini dibangun untuk kebutuhan organisasi saya dimna terdapat landing page dan terdapat sistem administrasi organisasi (proker, anggota, surat dll)</span>
-                        <span className="flex text-[16px] text-justify italic text-xs">Teknologi : React JS, Golang NestJs dan TailwindCSS</span>
-                    </div>
+                <div class="p-4 m-8 w-80 shadow-md rounded-xl">
+                    <picture class="rounded-lg block overflow-hidden">
+                        <img
+                        class="hover:scale-125 ease-in duration-150"
+                        src={UKMIK}
+                        />
+                    </picture>
+
+                    <h1 class="mt-4 mb-2 text-xl font-bold text-[#64FFDA]">Webiste Unit Kegiatan Mahasiswa Informatika dan Komputer</h1>
+                    <p class="text-xs">
+                        Project ini dibangun untuk kebutuhan organisasi saya dimna terdapat landing page dan terdapat sistem administrasi organisasi (proker, anggota, surat dll)                </p>
+                    <p class="text-xs italic pt-2">
+                        Teknologi : React JS, Golang NestJs dan TailwindCSS
+                    </p>
                 </div>
             </div>
         </div>
