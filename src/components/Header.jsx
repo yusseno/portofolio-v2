@@ -72,7 +72,10 @@ const Header = () => {
           <a href="#work">Work</a>
         </li>
         <li className={styleNav}>
-          <a href="#">Project</a>
+          <a href="#project">Project</a>
+        </li>
+        <li className={`${styleNav} lg:hidden`}>
+          <a href="#contact">Contact</a>
         </li>
         <li className={`${styleNav} m-auto w-fit px-4 lg:my-0 lg:mr-10 border-[1px] rounded-md border-[#64FFDA] text-[#64FFDA]`}>
           <a href="#">Resume</a>

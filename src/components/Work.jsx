@@ -1,4 +1,3 @@
-// import {GrWorkshop} from 'react-icons/gr';
 import { TbPoint } from "react-icons/tb";
 
 
@@ -16,9 +15,9 @@ const Work = () => {
         <div className="font-mono lg:px-40 px-10 lg:py-12 py-2 lg:pb-36 bg-[#09192F] text-slate-400 w-full" id="work">
             <div className="flex" data-aos="fade-right">
                 <div>
-                    <h2 className="text-[32px] w-[75px] text-slate-100 font-bold pb-2">Work</h2>
+                    <h2 className="text-[24px] lg:text-[32px] text-slate-100 font-bold pb-2">Work</h2>
                 </div>
-                <div className="bg-slate-400 w-full h-[2px] mt-6 ml-2">
+                <div className="bg-slate-400 w-full h-[2px] mt-4 lg:mt-6 ml-2">
                 </div>
             </div>
             <div className="flex">
