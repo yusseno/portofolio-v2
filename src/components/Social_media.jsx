@@ -26,7 +26,7 @@ const Social_media = () => {
                 <a href='https://twitter.com/yusseno19' className='m-4'>
                     <AiFillTwitterCircle className='hover:text-[#64FFDA] text-2xl' />
                 </a>
-                <a href='https://www.linkedin.com/in/yusseno-seno-622247198/' className='m-4'>
+                <a href='https://www.linkedin.com/in/yusseno' className='m-4'>
                     <AiFillLinkedin className='hover:text-[#64FFDA] text-2xl' />
                 </a>
             </div>
@@ -45,7 +45,7 @@ const Social_media = () => {
                     <a href='https://twitter.com/yusseno19' className='m-4'>
                         <AiFillTwitterCircle className='hover:text-[#64FFDA] text-2xl' />
                     </a>
-                    <a href='https://www.linkedin.com/in/yusseno-seno-622247198/' className='m-4'>
+                    <a href='https://www.linkedin.com/in/yusseno' className='m-4'>
                         <AiFillLinkedin className='hover:text-[#64FFDA] text-2xl' />
                     </a>
                 </div>
