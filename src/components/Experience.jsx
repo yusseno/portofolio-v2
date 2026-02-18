@@ -1,7 +1,6 @@
 import { TbPoint } from "react-icons/tb";
 import { VscOrganization } from "react-icons/vsc";
 import { LiaSchoolSolid } from "react-icons/lia";
-import { HiOutlineBriefcase } from "react-icons/hi";
 import React, { useEffect } from "react";
 import AOS from 'aos'
 import 'aos/dist/aos.css';
