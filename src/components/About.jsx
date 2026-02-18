@@ -1,138 +1,124 @@
 import React, { useEffect } from "react";
-import Golang from '../assets/images/abaut/golang-removebg.png'
-import Reacts from '../assets/images/abaut/react-removebg.png'
-import Tailwind from '../assets/images/abaut/tailwind-removebg.png'
-import Yusseno from '../assets/images/abaut/yusseno-full-transformed.png'
-import NextJs from '../assets/images/abaut/next-js.png'
-import NestJs from '../assets/images/abaut/nestjs-icon.png'
-import Laravel from '../assets/images/abaut/laravel-icon.png'
-import Ubuntu from '../assets/images/abaut/Ubuntu_and_Ubuntu_Server_Icon.png'
-import Docker from '../assets/images/abaut/docker-icon.png'
-import Gitlab from '../assets/images/abaut/gitlab-icon.png'
-import MySql from '../assets/images/abaut/mysql-icon.png'
-import PostresSql from '../assets/images/abaut/postgresSql-icon.png'
-import MongoDb from '../assets/images/abaut/mongodb-icon.png'
-import Redist from '../assets/images/abaut/redis-icon.png'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
+import Golang from "../assets/images/abaut/golang-removebg.png";
+import Reacts from "../assets/images/abaut/react-removebg.png";
+import Tailwind from "../assets/images/abaut/tailwind-removebg.png";
+import Yusseno from "../assets/images/abaut/yusseno-full-transformed.png";
+import NextJs from "../assets/images/abaut/next-js.png";
+import NestJs from "../assets/images/abaut/nestjs-icon.png";
+import Laravel from "../assets/images/abaut/laravel-icon.png";
+import Ubuntu from "../assets/images/abaut/Ubuntu_and_Ubuntu_Server_Icon.png";
+import Docker from "../assets/images/abaut/docker-icon.png";
+import Gitlab from "../assets/images/abaut/gitlab-icon.png";
+import MySql from "../assets/images/abaut/mysql-icon.png";
+import PostresSql from "../assets/images/abaut/postgresSql-icon.png";
+import MongoDb from "../assets/images/abaut/mongodb-icon.png";
+import Redist from "../assets/images/abaut/redis-icon.png";
 
-import AOS from 'aos'
-import 'aos/dist/aos.css';
+const Skill = ({ icon, name }) => (
+  <div className="flex flex-col items-center bg-[#112240] p-4 sm:p-5 md:p-6 rounded-xl hover:-translate-y-1 hover:shadow-xl hover:shadow-[#64FFDA]/10 transition-all duration-300">
+    <img src={icon} alt={name} className="h-10 sm:h-10 md:h-8 mb-3 object-contain" />
+    <p className="text-slate-300 text-sm sm:text-base text-center">{name}</p>
+  </div>
+);
+
+const SkillSection = ({ title, children }) => (
+  <div className="space-y-4 sm:space-y-6">
+    <h3 className="text-[#64FFDA] text-sm uppercase tracking-widest">
+      {title}
+    </h3>
+    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6">
+      {children}
+    </div>
+  </div>
+);
 
 const About = () => {
-    useEffect(() => {
-        AOS.init();
-    }, [])
-    return (
-        <div className="font-mono lg:px-40 px-10 lg:py-12 py-2 lg:pb-36 bg-[#09192F] w-full" id="about">
-            <div className="flex" data-aos="fade-right">
-                <div>
-                    <h2 className="text-[24px] w-32 lg:w-44 lg:text-[32px] text-slate-100 font-bold pb-2">About Me</h2>
-                </div>
-                <div className="bg-slate-400 w-full h-[2px] mt-4 lg:mt-6 ml-2">
-                </div>
-            </div>
-            <div className="grid grid-cols-1 lg:grid lg:grid-cols-2 py-4" data-aos="fade-left">
-                <figure className="flex justify-center">
-                    <div className="w-[250px] h-[260px] bg-red-400 rounded-md absolute z-10">
-                        <img src={Yusseno} alt='kosong' className="absolute mt-3"></img>
-                    </div>
-                    <div className="w-[250px] h-[260px] rounded-md absolute ml-10 mt-5 border-2 border-[#64FFDA] z-0">
-                    </div>
-                </figure>
-                <article className="mt-[310px] lg:mt-0 lg:mr-4">
-                    <p className="text-slate-400 text-xs lg:text-sm text-justify text-[16px]"> &nbsp; Hallo! Nama saya Yusseno dan saya senang membuat hal-hal yang hidup di internet. Ketertarikan saya pada pengembangan web dimulai Sekolah Menengah ketika saya mendapatkan tawaran untuk mencoba mengedit template untuk mengerjakan tugas teman saya, berupa tentang HTML & CSS!. <br />
-                        &nbsp; Kemudian karena merasakan tertarik di bidang tersebut saya memutuskan masuk ke sekolah kejuruan dan memutuskan melanjutkan studi ke Universitas untuk menpelajari lebih lanjut minat saya.<br />
-                        &nbsp; Berikut adalah beberapa teknologi yang telah saya gunakan baru-baru ini diantaranya :
-                    </p>
-                    <div className="flex">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#A9A9A9" class="w-6 h-6 mt-2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
-                        </svg>
-                        <p className="text-slate-400 text-sm ml-2 mt-3">Backend</p>
-                    </div>
-                    <div className="grid grid-cols-2 lg:grid-cols-5 gap-1">
-                        <div className="flex flex-col items-center justify-center">
-                            <img src={Golang} alt='kosong' className="h-6 mt-2"></img>
-                            <p className="text-slate-400 text-xs lg:text-sm mt-2">Golang</p>
-                        </div>
-                        <div className="flex flex-col items-center justify-center">
-                            <img src={NextJs} alt='kosong' className="h-6 mt-2"></img>
-                            <p className="text-slate-400 text-xs lg:text-sm mt-2">Next Js</p>
-                        </div>
-                        <div className="flex flex-col items-center justify-center">
-                            <img src={NestJs} alt='kosong' className="h-6 mt-2"></img>
-                            <p className="text-slate-400 text-xs lg:text-sm mt-2">Nest Js</p>
-                        </div>
-                        <div className="flex flex-col items-center justify-center">
-                            <img src={Laravel} alt='kosong' className="h-6 mt-2"></img>
-                            <p className="text-slate-400 text-xs lg:text-sm mt-2">Laravel</p>
-                        </div>
-                    </div>
-                    <div className="flex">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#A9A9A9" class="w-6 h-6 mt-2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
-                        </svg>
-                        <p className="text-slate-400 text-sm ml-2 mt-3">Frontend</p>
-                    </div>
-                    <div className="grid grid-cols-2 lg:grid-cols-5 gap-1">
-                        <div className="flex flex-col items-center justify-center">
-                            <img src={Reacts} alt='kosong' className="h-6 mt-2"></img>
-                            <p className="text-slate-400 text-xs lg:text-sm mt-2">React</p>
-                        </div>
-                        <div className="flex flex-col items-center justify-center">
-                            <img src={Tailwind} alt='kosong' className="h-5 mt-2"></img>
-                            <p className="text-slate-400 text-xs lg:text-sm mt-2">Tailwind CSS</p>
-                         </div>
-                    </div>
-                    <div className="flex">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#A9A9A9" class="w-6 h-6 mt-2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
-                        </svg>
-                        <p className="text-slate-400 text-sm ml-2 mt-3">Development & Operations</p>
-                    </div>
-                    <div className="grid grid-cols-2 lg:grid-cols-5 gap-1">
-                        <div className="flex flex-col items-center justify-center">
-                            <img src={Ubuntu} alt='kosong' className="h-6 mt-2"></img>
-                            <p className="text-slate-400 text-xs lg:text-sm mt-2">Ubuntu</p>
-                        </div>
-                        <div className="flex flex-col items-center justify-center">
-                            <img src={Gitlab} alt='kosong' className="h-5 mt-2"></img>
-                            <p className="text-slate-400 text-xs lg:text-sm mt-2">Gitlab</p>
-                        </div>
-                        <div className="flex flex-col items-center justify-center">
-                            <img src={Docker} alt='kosong' className="h-5 mt-2"></img>
-                            <p className="text-slate-400 text-xs lg:text-sm mt-2">Docker</p>
-                        </div>
-                    </div>
-                    <div className="flex">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#A9A9A9" class="w-6 h-6 mt-2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
-                        </svg>
-                        <p className="text-slate-400 text-sm ml-2 mt-3">Database</p>
-                    </div>
-                    <div className="grid grid-cols-2 lg:grid-cols-5 gap-1">
-                        <div className="flex flex-col items-center justify-center">
-                            <img src={MySql} alt='kosong' className="h-6 mt-2"></img>
-                            <p className="text-slate-400 text-xs lg:text-sm mt-2">MySql</p>
-                        </div>
-                        <div className="flex flex-col items-center justify-center">
-                            <img src={PostresSql} alt='kosong' className="h-5 mt-2"></img>
-                            <p className="text-slate-400 text-xs lg:text-sm mt-2">PostgresSQL</p>
-                        </div>
-                        <div className="flex flex-col items-center justify-center">
-                            <img src={MongoDb} alt='kosong' className="h-5 mt-2"></img>
-                            <p className="text-slate-400 text-xs lg:text-sm mt-2">MongoDB</p>
-                        </div>
-                        <div className="flex flex-col items-center justify-center">
-                            <img src={Redist} alt='kosong' className="h-5 mt-2"></img>
-                            <p className="text-slate-400 text-xs lg:text-sm mt-2">Redist</p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
 
-    )
-}
+  return (
+    <section
+      id="about"
+      className="font-mono px-4 sm:px-6 md:px-10 lg:px-20 xl:px-32 2xl:px-40 py-12 sm:py-16 md:py-20 bg-[#09192F] w-full"
+    >
+      {/* Title */}
+      <div className="flex items-center gap-3 sm:gap-4 mb-10 sm:mb-12 md:mb-16" data-aos="fade-right">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-100 whitespace-nowrap">
+          About Me
+        </h2>
+        <div className="h-[1px] w-full bg-slate-600"></div>
+      </div>
+
+      {/* Main Grid */}
+      <div
+        className="grid grid-cols-1 lg:grid-cols-[350px_1fr] xl:grid-cols-[380px_1fr] gap-8 sm:gap-10 md:gap-12 lg:gap-16 xl:gap-20 items-start"
+        data-aos="fade-up"
+      >
+        {/* Image Section */}
+        <figure className="relative w-full max-w-[200px] sm:max-w-[240px] md:max-w-[280px] lg:max-w-none mx-auto lg:mx-0 group">
+          <div className="absolute inset-0 border-2 border-[#64FFDA] rounded-xl translate-x-3 translate-y-3 sm:translate-x-4 sm:translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-all duration-300"></div>
+          <div className="relative rounded-xl overflow-hidden z-10">
+            <img
+              src={Yusseno}
+              alt="Yusseno"
+              className="w-full h-auto object-cover"
+            />
+          </div>
+        </figure>
+
+        {/* Content Section */}
+        <article className="space-y-8 sm:space-y-10 md:space-y-12">
+          {/* Description */}
+          <p className="text-slate-400 text-sm sm:text-base md:text-md leading-relaxed">
+            Hello! My name is Yusseno, and I enjoy building things that live on
+            the internet. My interest in web development started in high school
+            when I had the opportunity to edit a template for a friend's
+            assignment involving HTML & CSS.
+            <br />
+            <br />
+            After discovering my passion for the field, I decided to enroll in
+            a vocational school and later continued my studies at university to
+            further deepen my knowledge and skills.
+            <br />
+            <br />
+            Here are some technologies I've been working with recently:
+          </p>
+
+          {/* Skills */}
+          <div className="space-y-8 sm:space-y-10 md:space-y-12">
+            <SkillSection title="Backend">
+              <Skill icon={Golang} name="Golang" />
+              <Skill icon={NextJs} name="Next.js" />
+              <Skill icon={NestJs} name="NestJS" />
+              <Skill icon={Laravel} name="Laravel" />
+            </SkillSection>
+
+            <SkillSection title="Frontend">
+              <Skill icon={Reacts} name="React" />
+              <Skill icon={Tailwind} name="Tailwind CSS" />
+            </SkillSection>
+
+            <SkillSection title="Development & Operations">
+              <Skill icon={Ubuntu} name="Ubuntu" />
+              <Skill icon={Gitlab} name="GitLab" />
+              <Skill icon={Docker} name="Docker" />
+            </SkillSection>
+
+            <SkillSection title="Database">
+              <Skill icon={MySql} name="MySQL" />
+              <Skill icon={PostresSql} name="PostgreSQL" />
+              <Skill icon={MongoDb} name="MongoDB" />
+              <Skill icon={Redist} name="Redis" />
+            </SkillSection>
+          </div>
+        </article>
+      </div>
+    </section>
+  );
+};
 
 export default About;

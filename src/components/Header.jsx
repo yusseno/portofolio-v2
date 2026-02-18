@@ -78,7 +78,7 @@ const Header = () => {
           <a href="#contact">Contact</a>
         </li>
         <li className={`${styleNav} m-auto w-fit px-4 lg:my-0 lg:mr-10 border-[1px] rounded-md border-[#64FFDA] text-[#64FFDA]`}>
-          <a href="https://drive.google.com/file/d/1nwLYg86N6xQZWCWxvyGZNS9ZAjomXgus/view?usp=drive_link">Resume</a>
+          <a href="https://drive.google.com/file/d/1ZI6i_RLIN6kJKVLgH4f0lkJIaTULvshR/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
         </li>
       </ul>
     </nav>
