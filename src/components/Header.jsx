@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import Logo from "../assets/Y-logo.png";
 
 const Header = () => {
@@ -12,6 +11,7 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const handleScroll = () => {
     const currentScrollPos = window.scrollY;
     const shouldShow = currentScrollPos < prevScrollPos || currentScrollPos < 100;
@@ -30,7 +30,7 @@ const Header = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [prevScrollPos]);
+  }, [handleScroll, prevScrollPos]);
 
   const [isScrolled, setIsScrolled] = useState(true);
 
