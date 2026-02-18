@@ -6,7 +6,7 @@ import Experience from "./Experience";
 import Work from "./Work";
 import Project from "./Project"
 import Contact from "./Contact";
-import Sosial_media from "./Social_media";
+import SosialMedia from "./Social_media";
 
 const Layout = () => {
     return (
@@ -18,7 +18,7 @@ const Layout = () => {
             <Work />
             <Project />
             <Contact />
-            <Sosial_media />
+            <SosialMedia />
         </div>
     )
 };
