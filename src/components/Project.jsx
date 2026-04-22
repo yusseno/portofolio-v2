@@ -2,11 +2,6 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { HiOutlineExternalLink, HiCode } from "react-icons/hi";
-import { FiGithub } from "react-icons/fi";
-
-import Kanban from "../assets/images/project/kanban_app.png";
-import Bluebird from "../assets/images/project/bluebird.png";
-import UKMIK from "../assets/images/project/ukm-ik.png";
 
 const TechBadge = ({ name }) => (
   <span className="px-2 py-1 text-xs bg-[#64FFDA]/10 text-[#64FFDA] rounded border border-[#64FFDA]/30 hover:bg-[#64FFDA]/20 transition-colors duration-200">
@@ -15,11 +10,9 @@ const TechBadge = ({ name }) => (
 );
 
 const ProjectCard = ({
-  image,
   title,
   description,
   technologies,
-  github,
   demo,
   index,
 }) => (
@@ -30,27 +23,17 @@ const ProjectCard = ({
   >
     {/* Image Container */}
     <div className="relative overflow-hidden aspect-video bg-slate-800/50">
-      <img
-        src={image}
-        alt={title}
-        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-out"
-      />
+      {/* Empty placeholder instead of image */}
+      <div className="w-full h-full bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center">
+        <div className="text-slate-500 text-4xl">
+          <HiCode />
+        </div>
+      </div>
       {/* Overlay on hover */}
       <div className="absolute inset-0 bg-gradient-to-t from-[#112240] via-[#112240]/50 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
 
       {/* Action Buttons on Image */}
       <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        {github && (
-          <a
-            href={github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-2 bg-[#112240] rounded-lg hover:bg-[#64FFDA]/20 hover:text-[#64FFDA] transition-all duration-200"
-            aria-label="View GitHub Repository"
-          >
-            <FiGithub className="text-xl" />
-          </a>
-        )}
         {demo && (
           <a
             href={demo}
@@ -93,85 +76,53 @@ const ProjectCard = ({
 const Projects = () => {
   const projectsData = [
     {
-      image: Bluebird,
       title: "Genvit.id",
       description:
-        "Project ini dibangun ketika Magang di PT. Bluebird Tbk. dimana aplikasi ini dibangun untuk keperluan management karyawan dan absensi karyawan menggunakan QR code. Sistem ini memudahkan tracking kehadiran dan manajemen tim.",
+        "Platform e-commerce lengkap untuk berbagai kebutuhan belanja online. Menyediakan fitur katalog produk, keranjang belanja, sistem pembayaran terintegrasi, dan manajemen order dengan user experience yang optimal untuk customer.",
       technologies: ["React JS", "Golang", "Kotlin", "TailwindCSS"],
-      github: "#",
       demo: "#",
     },
     {
-      image: UKMIK,
       title: "Anoman",
       description:
-        "Project ini dibangun untuk kebutuhan organisasi dimana terdapat landing page dan sistem administrasi organisasi lengkap termasuk manajemen program kerja, anggota, surat, dan dokumentasi kegiatan organisasi.",
+        "Sistem internal untuk manajemen pesanan yang efisien dan terintegrasi. Platform ini memungkinkan tracking pesanan real-time, manajemen inventory, koordinasi tim, dan reporting untuk optimalisasi proses bisnis internal.",
       technologies: ["React JS", "Golang", "NestJS", "TailwindCSS"],
-      github: "#",
       demo: "#",
     },
     {
-      image: Kanban,
       title: "Arum",
       description:
-        "Project ini dibangun ketika mengerjakan final project MSIB Studi Independen di Ruang Guru, dengan program Software Engineering dengan pilihan kelas Backend. Aplikasi ini memungkinkan tim untuk mengelola task dan workflow dengan sistem drag-and-drop.",
+        "Aplikasi validasi keuangan yang membantu verifikasi dan validasi transaksi finansial. Sistem ini menyediakan fitur audit trail, approval workflow, dan reporting untuk memastikan akurasi dan compliance dalam proses keuangan.",
       technologies: ["Golang", "TailwindCSS"],
-      github: "#", // Replace with actual link
-      demo: "#", // Replace with actual link
+      demo: "#",
     },
     {
-      image: Kanban,
       title: "Bagonk",
       description:
-        "Project ini dibangun ketika mengerjakan final project MSIB Studi Independen di Ruang Guru, dengan program Software Engineering dengan pilihan kelas Backend. Aplikasi ini memungkinkan tim untuk mengelola task dan workflow dengan sistem drag-and-drop.",
+        "Sistem fulfillment yang mengotomatisasi proses pengiriman dan distribusi produk. Platform ini mengelola warehouse management, shipping integration, tracking pengiriman, dan optimalisasi logistik untuk efisiensi supply chain.",
       technologies: ["Golang", "TailwindCSS"],
-      github: "#", // Replace with actual link
-      demo: "#", // Replace with actual link
+      demo: "#",
     },
     {
-      image: Kanban,
       title: "Kamera Lensa Jogja",
       description:
-        "Project ini dibangun ketika mengerjakan final project MSIB Studi Independen di Ruang Guru, dengan program Software Engineering dengan pilihan kelas Backend. Aplikasi ini memungkinkan tim untuk mengelola task dan workflow dengan sistem drag-and-drop.",
+        "Website portofolio perusahaan yang menampilkan layanan dan expertise di bidang fotografi profesional. Menampilkan galeri karya, profil tim, testimoni klien, dan informasi kontak untuk menarik prospek baru.",
       technologies: ["Golang", "TailwindCSS"],
-      github: "#", // Replace with actual link
-      demo: "#", // Replace with actual link
+      demo: "#",
     },
     {
-      image: Kanban,
       title: "CV. Simbda Marigi Kayra",
       description:
-        "Project ini dibangun ketika mengerjakan final project MSIB Studi Independen di Ruang Guru, dengan program Software Engineering dengan pilihan kelas Backend. Aplikasi ini memungkinkan tim untuk mengelola task dan workflow dengan sistem drag-and-drop.",
+        "Website portofolio perusahaan yang comprehensive untuk showcase kemampuan dan track record bisnis. Menampilkan company profile, portfolio proyek, layanan yang ditawarkan, dan credibility untuk menarik calon klien.",
       technologies: ["Golang", "TailwindCSS"],
-      github: "#", // Replace with actual link
-      demo: "#", // Replace with actual link
+      demo: "#",
     },
     {
-      image: Bluebird,
       title: "Squad Management System",
       description:
-        "Project ini dibangun ketika Magang di PT. Bluebird Tbk. dimana aplikasi ini dibangun untuk keperluan management karyawan dan absensi karyawan menggunakan QR code. Sistem ini memudahkan tracking kehadiran dan manajemen tim.",
+        "Aplikasi Human Resource Information System (HRIS) untuk mengelola seluruh aspek SDM perusahaan. Sistem ini mencakup employee management, payroll, attendance, performance evaluation, dan reporting HR analytics.",
       technologies: ["React JS", "Golang", "Kotlin", "TailwindCSS"],
-      github: "#",
       demo: "#",
-    },
-    {
-      image: UKMIK,
-      title: "Website UKM Informatika dan Komputer",
-      description:
-        "Project ini dibangun untuk kebutuhan organisasi dimana terdapat landing page dan sistem administrasi organisasi lengkap termasuk manajemen program kerja, anggota, surat, dan dokumentasi kegiatan organisasi.",
-      technologies: ["React JS", "Golang", "NestJS", "TailwindCSS"],
-      github: "#",
-      demo: "#",
-    },
-    {
-      image: Kanban,
-      title: "Website Kanban APP",
-      description:
-        "Project ini dibangun ketika mengerjakan final project MSIB Studi Independen di Ruang Guru, dengan program Software Engineering dengan pilihan kelas Backend. Aplikasi ini memungkinkan tim untuk mengelola task dan workflow dengan sistem drag-and-drop.",
-      technologies: ["Golang", "TailwindCSS"],
-      github: "#", // Replace with actual link
-      demo: "#", // Replace with actual link
     },
   ];
 
@@ -200,11 +151,9 @@ const Projects = () => {
         {projectsData.map((project, index) => (
           <ProjectCard
             key={index}
-            image={project.image}
             title={project.title}
             description={project.description}
             technologies={project.technologies}
-            github={project.github}
             demo={project.demo}
             index={index}
           />
